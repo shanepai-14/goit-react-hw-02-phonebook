@@ -8,11 +8,9 @@ const Header = () => {
     const location = useLocation();
 
     useEffect(() => {
-      if (location.pathname.includes('/goit-react-hw-02-phonebook')) {
-          setValue(1);
-      } else {
-          setValue(0);
-      }
+      if (location.pathname.includes('/goit-react-hw-02-phonebook'))  setValue(1);
+        
+      
   }, [location]);
     
     const handleChange = (event, newValue) => {
